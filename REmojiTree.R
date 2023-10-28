@@ -57,6 +57,6 @@ p <- ggtree(tree, layout = "circular") +
 p
 
 #save as png
-png(filename="emojitree.png", width = 10, height = 10, unit = "cm", res = 1000)
+png(filename = file.path(imgdir, "emojitree.png"), width = 10, height = 10, unit = "cm", res = 1000)
 p
 dev.off()
