@@ -2,7 +2,7 @@ library(ggplot2)
 library(ggtree)
 
 #Define the directory you want your images in
-imgdir <- c("C:/Users/gf004/Desktop/emoji")
+imgdir <- c("C:/")
 #Select type of emoji you want ("Apple", "Twitter", "Facebook", "Google", "WhatsApp", "Samsung")
 emoji_type = "Samsung"
 
