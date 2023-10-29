@@ -1,42 +1,31 @@
 # REmojiTree
-This is an R script that builds a phylogenetic tree of all existing plant emojis.
+This is an R script that builds a phylogenetic tree of emojis.
 
 It is inspired from [PlantPhylomoji](https://github.com/ghuertaramos/PlantPhylomoji). As many recently added emojis are missing from the emojifont package used by PlantPhylomoji, it does not allow to build trees with emojis that were added later than 2016.
-To resolve this, REmojiTree downloads images of the emojis from https://emojipedia.org/ to build the tree.
-You will need to define the folder you want to download the images to in the imgdir variable.
+To resolve this, REmojiTree downloads images of the emojis from https://emojipedia.org/ to build the tree. 
+
+## Usage
 The [ggplot2](https://ggplot2.tidyverse.org/) and [ggtree](https://bioconductor.org/packages/release/bioc/html/ggtree.html) packages are required.
-
-
+You will need to define the folder you want to download the images to in the imgdir variable.
 REmojiTree supports Apple, Twitter, Facebook, Google, Whatsapp and Samsung type emojis. You will need to define the type you want in the emoji_type variable.
+REmojiTree can build trees of plant emojis, animal emojis, and the whole emoji tree of life. You will need to define which you want.
+After this, you can run the script and the tree will be saved as a .png in the folder you defined.
 
-These are the trees that can be built with REmojiTree:
-
-## Apple
+## Tree examples
+These are examples of trees that can be built with REmojiTree:
 <p align="center">  
-<img width="500" height="500" src="./Trees/emojitree_Apple.png">
+<img width="800" height="800" src="./Trees/emojitree_Twitter_Plant.png">
 </p>
 
-## Google
 <p align="center">  
-<img width="500" height="500" src="./Trees/emojitree_Google.png">
+<img width="800" height="800" src="./Trees/emojitree_Twitter_Animal.png">
 </p>
 
-## Samsung
 <p align="center">  
-<img width="500" height="500" src="./Trees/emojitree_Samsung.png">
+<img width="800" height="800" src="./Trees/emojitree_Twitter_All.png">
 </p>
 
-## Twitter
-<p align="center">  
-<img width="500" height="500" src="./Trees/emojitree_Twitter.png">
-</p>
-
-## WhatsApp
-<p align="center">  
-<img width="500" height="500" src="./Trees/emojitree_WhatsApp.png">
-</p>
-
-## Tables of emojis
+## Tables of plant emojis
 
 Some emojis represent different plants depending on the emoji type so the trees will differ. Some choices may be arbitrary. 
 Here are the corresponding taxa:
@@ -51,7 +40,7 @@ Here are the corresponding taxa:
 Note: the Apple emoji for the potted plant is too generic and no taxon could be clearly attributed.
 <p align="left"><img width="50" height="50" src="./Emojis/Apple/potted-plant.png"></p>
 
-Here are the corresponding taxa for the remaining emojis:
+Here are the corresponding taxa for the remaining plant emojis:
 
 | Emoji | Taxon        | Apple | Facebook | Google | Samsung | Twitter | WhatsApp |
 |-------|--------------|--------|---------|---------|----------|---------|----------|
